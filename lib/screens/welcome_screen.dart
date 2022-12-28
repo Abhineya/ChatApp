@@ -59,12 +59,20 @@ class _WelcomeScreenState extends State<WelcomeScreen>
                     height: 60.0,
                   ),
                 ),
-                Text(
-                  'Flash Chat',
-                  style: TextStyle(
-                    color: Colors.black54,
-                    fontSize: 40.0,
-                    fontWeight: FontWeight.w900,
+                SizedBox(
+                  child: DefaultTextStyle(
+                    style: const TextStyle(
+                      color: Colors.black54,
+                      fontSize: 40.0,
+                      fontWeight: FontWeight.w900,
+                    ),
+                    child: AnimatedTextKit(
+                      totalRepeatCount: 1,
+                      animatedTexts: [
+                        TypewriterAnimatedText('Flash Chat',
+                            speed: Duration(milliseconds: 100)),
+                      ],
+                    ),
                   ),
                 ),
               ],
