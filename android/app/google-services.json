@@ -1,33 +1,33 @@
 {
   "project_info": {
-    "project_number": "258414644005",
-    "project_id": "flutter-insta-clone-be611",
-    "storage_bucket": "flutter-insta-clone-be611.appspot.com"
+    "project_number": "624559119803",
+    "project_id": "flash-chat-47c61",
+    "storage_bucket": "flash-chat-47c61.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:258414644005:android:cb1c7de616deb6bd7528cc",
+        "mobilesdk_app_id": "1:624559119803:android:ac6dfc833f69012bd8b89e",
         "android_client_info": {
-          "package_name": "com.example.instagram_clone"
+          "package_name": "com.example.chat_app"
         }
       },
       "oauth_client": [
-        { 
-          "client_id": "258414644005-28necjgmte4ql911eltqngpqh2ncd2h4.apps.googleusercontent.com",
+        {
+          "client_id": "624559119803-pe3roi6lgrflfh5j179sdtuhba312hj9.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyAm_YO_0A91WMo6GYBshQENPXV7CRm5r3g"
+          "current_key": "AIzaSyDRgbguy0AmZUfO0TFNKFPz0RTt5Npp_qE"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "258414644005-28necjgmte4ql911eltqngpqh2ncd2h4.apps.googleusercontent.com",
+              "client_id": "624559119803-pe3roi6lgrflfh5j179sdtuhba312hj9.apps.googleusercontent.com",
               "client_type": 3
             }
           ]
