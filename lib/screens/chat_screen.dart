@@ -14,7 +14,7 @@ class ChatScreen extends StatefulWidget {
 }
 
 class _ChatScreenState extends State<ChatScreen> {
-  final _firestore = FirebaseFirestore.instance;//create instance
+  final _firestore = FirebaseFirestore.instance; //create instance
   final _auth = FirebaseAuth.instance;
   late User loggedInUser;
   late String messageText;
@@ -33,6 +33,14 @@ class _ChatScreenState extends State<ChatScreen> {
       }
     } catch (e) {
       print(e);
+    }
+  }
+
+  void messagesStream() async {
+    await for (var snapshots in _firestore.collection('messages').snapshots()) {
+      for (var message in snapshots.docs) {
+        print(message.data());
+      }
     }
   }
 
@@ -75,7 +83,7 @@ class _ChatScreenState extends State<ChatScreen> {
                       _firestore.collection('messages').add({
                         'text': messageText,
                         'sender': loggedInUser.email,
-                      });//adding to database
+                      }); //adding to database
                     },
                     child: Text(
                       'Send',
