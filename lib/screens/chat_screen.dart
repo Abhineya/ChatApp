@@ -42,7 +42,7 @@ class _ChatScreenState extends State<ChatScreen> {
         print(message.data());
       }
     }
-  }
+  }//stream of messages
 
   @override
   Widget build(BuildContext context) {
